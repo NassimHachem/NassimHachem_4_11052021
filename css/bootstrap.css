@@ -1406,13 +1406,13 @@ textarea {
 }
 
 a {
-    color: #337ab7;
+    color: #FFF;
     text-decoration: none
 }
 
 a:focus,
 a:hover {
-    color: #23527c;
+    
     text-decoration: underline
 }
 
@@ -1427,7 +1427,8 @@ figure {
 }
 
 img {
-    vertical-align: middle
+    vertical-align: middle;
+    margin: auto;
 }
 
 .carousel-inner>.item>a>img,
@@ -7675,18 +7676,7 @@ button.close {
     list-style: none
 }
 
-.carousel-indicators li {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 1px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #000\9;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #fff;
-    border-radius: 10px
-}
+
 
 .carousel-indicators .active {
     width: 12px;
