@@ -27,52 +27,6 @@ a:hover {
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
-.step p{
-    line-height: 2.3rem;
-}
-
-.font-p{
-    font-size: 1.5rem;
-}
-
-.citation{
-    font-style: italic;
-    font-size: 2rem;
-    line-height: 2.3rem;
-}
-
-.portfolio-title{
-    font-size: 2.3rem;
-}
-
-.cta__title{
-    font-size: 2.4rem;
-}
-
-footer p{
-    font-size: 1.3rem;
-    font-weight: 300;
-}
-
-.underline{
-    text-decoration: underline;
-    
-}
-
-.service a{
-    margin-right: 10px;
-}
-
-.font-f{
-    font-size: 1.6rem;
-    font-weight: bold;
-}
-
-.legals{
-    margin-top: 20px;
-}
-
-
 .bloc {
     width: 100%;
     clear: both;
@@ -139,7 +93,6 @@ footer p{
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-    
 }
 
 .b-parallax {
@@ -148,15 +101,7 @@ footer p{
 
 .d-bloc {
     color: rgba(255, 255, 255, .7);
-    
 }
-
-.vertical{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
@@ -504,7 +449,6 @@ nav .caret {
     margin: 0 5px 5px 0;
 }
 
-
 .btn.pull-right {
     margin: 0 0 5px 5px;
 }
@@ -702,15 +646,16 @@ h4,
 h5,
 h6,
 p,
-label {
+label,
+.btn,
+a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757;
+    color: #575757!important;
 }
 
 .container {
-    max-width: 1440px;
-    
+    max-width: 1000px;
 }
 
 .hero-bloc-text {
@@ -757,8 +702,6 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
-    display: flex;
-    justify-content: space-around;
 }
 
 h2 {
@@ -780,7 +723,7 @@ h3 {
 }
 
 h1 {
-    color: #333333;
+    color: #333333!important;
 }
 
 h4 {
@@ -831,13 +774,8 @@ h4 {
     background-color: #F3976C;
 }
 
-.tc-yellow {
-    color: #f0c54e!important;
-    position: relative;
-}
-
-.tc-white{
-    color: #FFF;
+.tc-white {
+    color: #F3976C!important;
 }
 
 .btn-atomic-tangerine {
@@ -929,7 +867,11 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
-    
+    .page-container,
+    #hero-bloc {
+        overflow-x: hidden;
+        position: relative;
+    }
     .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
@@ -948,7 +890,21 @@ h4 {
 }
 
 @media (max-width: 767px) {
-    
+    .page-container {
+        overflow-x: hidden;
+        position: relative;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    #disqus_thread {
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+    }
     .b-parallax {
         background-attachment: scroll;
     }
